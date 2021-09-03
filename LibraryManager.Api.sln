@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31624.102
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryManager.Api", "LibraryManager.Api\LibraryManager.Api.csproj", "{6F7CDD05-9DA5-4895-8C69-F17A08BC43DD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraryManager.Api", "LibraryManager.Api\LibraryManager.Api.csproj", "{6F7CDD05-9DA5-4895-8C69-F17A08BC43DD}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{90B118CB-0143-4B2E-97CD-BF58A6903B71}"
 EndProject
@@ -17,9 +17,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Integration Tests", "Integr
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Unit Tests", "Unit Tests", "{51F09869-333E-48D5-97C7-7FBDE794D106}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryManager.Core", "LibraryManager.Core\LibraryManager.Core.csproj", "{7AE28F59-6213-46E0-8EB3-BDF7722385C7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraryManager.Core", "LibraryManager.Core\LibraryManager.Core.csproj", "{7AE28F59-6213-46E0-8EB3-BDF7722385C7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryManager.Infrastructure.DataAccess", "LibraryManager.Infrastructure.DataAccess\LibraryManager.Infrastructure.DataAccess.csproj", "{487BA315-E294-40A9-A05B-080932F13095}"
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "LibraryManager.Database", "LibraryManager.Database\LibraryManager.Database.sqlproj", "{3FC152EA-6047-4A10-AA57-FA612A1F847A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryManager.Repositories", "LibraryManager.Repositories\LibraryManager.Repositories.csproj", "{CDB05554-9EDB-4A27-8BFC-C529811C1C5F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraryManager.Infrastructure.DataAccess", "LibraryManager.Infrastructure.DataAccess\LibraryManager.Infrastructure.DataAccess.csproj", "{12A02B14-DEDA-44E7-813E-DDE308ECCC1C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,10 +39,20 @@ Global
 		{7AE28F59-6213-46E0-8EB3-BDF7722385C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7AE28F59-6213-46E0-8EB3-BDF7722385C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7AE28F59-6213-46E0-8EB3-BDF7722385C7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{487BA315-E294-40A9-A05B-080932F13095}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{487BA315-E294-40A9-A05B-080932F13095}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{487BA315-E294-40A9-A05B-080932F13095}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{487BA315-E294-40A9-A05B-080932F13095}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FC152EA-6047-4A10-AA57-FA612A1F847A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FC152EA-6047-4A10-AA57-FA612A1F847A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FC152EA-6047-4A10-AA57-FA612A1F847A}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{3FC152EA-6047-4A10-AA57-FA612A1F847A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FC152EA-6047-4A10-AA57-FA612A1F847A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FC152EA-6047-4A10-AA57-FA612A1F847A}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{CDB05554-9EDB-4A27-8BFC-C529811C1C5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDB05554-9EDB-4A27-8BFC-C529811C1C5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDB05554-9EDB-4A27-8BFC-C529811C1C5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDB05554-9EDB-4A27-8BFC-C529811C1C5F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12A02B14-DEDA-44E7-813E-DDE308ECCC1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12A02B14-DEDA-44E7-813E-DDE308ECCC1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12A02B14-DEDA-44E7-813E-DDE308ECCC1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12A02B14-DEDA-44E7-813E-DDE308ECCC1C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -46,7 +60,9 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{6F7CDD05-9DA5-4895-8C69-F17A08BC43DD} = {90B118CB-0143-4B2E-97CD-BF58A6903B71}
 		{7AE28F59-6213-46E0-8EB3-BDF7722385C7} = {2F0EC63D-48AA-49D7-8B21-A07FE9AC747A}
-		{487BA315-E294-40A9-A05B-080932F13095} = {52DAFC55-0B43-4A3C-B9C5-F8150D177A25}
+		{3FC152EA-6047-4A10-AA57-FA612A1F847A} = {52DAFC55-0B43-4A3C-B9C5-F8150D177A25}
+		{CDB05554-9EDB-4A27-8BFC-C529811C1C5F} = {52DAFC55-0B43-4A3C-B9C5-F8150D177A25}
+		{12A02B14-DEDA-44E7-813E-DDE308ECCC1C} = {52DAFC55-0B43-4A3C-B9C5-F8150D177A25}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6E05F3C4-4912-4FE3-B777-F9FC067EFCE0}

@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LibraryManager.Core\LibraryManager.Core.csproj" />
+    <ProjectReference Include="..\LibraryManager.Infrastructure.DataAccess\LibraryManager.Infrastructure.DataAccess.csproj" />
+  </ItemGroup>
+
+</Project>
