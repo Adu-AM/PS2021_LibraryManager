@@ -21,9 +21,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraryManager.Core", "Libr
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "LibraryManager.Database", "LibraryManager.Database\LibraryManager.Database.sqlproj", "{3FC152EA-6047-4A10-AA57-FA612A1F847A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryManager.Repositories", "LibraryManager.Repositories\LibraryManager.Repositories.csproj", "{CDB05554-9EDB-4A27-8BFC-C529811C1C5F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraryManager.Repositories", "LibraryManager.Repositories\LibraryManager.Repositories.csproj", "{CDB05554-9EDB-4A27-8BFC-C529811C1C5F}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraryManager.Infrastructure.DataAccess", "LibraryManager.Infrastructure.DataAccess\LibraryManager.Infrastructure.DataAccess.csproj", "{12A02B14-DEDA-44E7-813E-DDE308ECCC1C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryManager.Services", "LibraryManager.Services\LibraryManager.Services.csproj", "{F74F6730-AE23-49F4-87EE-B9E3B476AE2D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,6 +55,10 @@ Global
 		{12A02B14-DEDA-44E7-813E-DDE308ECCC1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{12A02B14-DEDA-44E7-813E-DDE308ECCC1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{12A02B14-DEDA-44E7-813E-DDE308ECCC1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F74F6730-AE23-49F4-87EE-B9E3B476AE2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F74F6730-AE23-49F4-87EE-B9E3B476AE2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F74F6730-AE23-49F4-87EE-B9E3B476AE2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F74F6730-AE23-49F4-87EE-B9E3B476AE2D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -63,6 +69,7 @@ Global
 		{3FC152EA-6047-4A10-AA57-FA612A1F847A} = {52DAFC55-0B43-4A3C-B9C5-F8150D177A25}
 		{CDB05554-9EDB-4A27-8BFC-C529811C1C5F} = {52DAFC55-0B43-4A3C-B9C5-F8150D177A25}
 		{12A02B14-DEDA-44E7-813E-DDE308ECCC1C} = {52DAFC55-0B43-4A3C-B9C5-F8150D177A25}
+		{F74F6730-AE23-49F4-87EE-B9E3B476AE2D} = {F2C94B49-D88A-415C-BD55-FF1970BDF8E6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6E05F3C4-4912-4FE3-B777-F9FC067EFCE0}

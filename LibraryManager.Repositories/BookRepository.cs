@@ -4,6 +4,7 @@ using System;
 using System.Threading.Tasks;
 using System.Collections.Generic;
 using LibraryManager.Infrastructure.DataAccess;
+using Dapper;
 
 namespace LibraryManager.Repositories
 {
@@ -16,9 +17,10 @@ namespace LibraryManager.Repositories
             _connectionFactory = connectionFactory;
         }
 
-        public Task<IEnumerable<Book>> GetBookAsync()
+        public async  Task<IEnumerable<Book>> GetBookAsync()
         {
-            throw new NotImplementedException();
+            const string query = @"Select * from Book";
+            return  await _connectionFactory.GetConnection().QueryAsync<Book>(query);
         }
     }
 }
