@@ -1,5 +1,5 @@
 using LibraryManager.Api.Config;
-using LibraryManager.Infrastructure.DataAccess;
+using LibraryManager.Api.Extensions;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -22,8 +22,7 @@ namespace LibraryManager.Api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddSingleton<IAppConfig>(ctx => AppConfig.Instance);
-            services.AddSingleton<IDbConnectionFactory>(ctx => new DbConnectionFactory(ctx.GetRequiredService<IAppConfig>().ConnectionString));
+            services.AddLibraryManagerServices();
 
             services.AddControllers();
             services.AddSwaggerGen(c =>
