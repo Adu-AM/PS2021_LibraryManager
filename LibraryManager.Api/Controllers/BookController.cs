@@ -33,16 +33,20 @@ namespace LibraryManager.Api.Controllers
         }
 
 
-        /*
-        /// Aduc o carte dupa titlu
-        [HttpGet("{name}")]
-        public async Task<ActionResult<BookDto>> GetBookAsync()
+        [HttpGet("test")]
+        public async Task<ActionResult<Book>> GetBookAsync(string name)
         {
-            var bookList = new List<Book>();
-            bookList = GetBooksAsync();
-            var result = bookLis
-            return null;
+            var allbooks = await _bookService.GetBooksAsync();
+            var result = allbooks.FirstOrDefault(b => b.Name.TrimEnd().Equals(name));
+
+            if (result == null)
+            {
+                return NotFound($"The book \"{name}\"could not be found.");
+            }
+
+            return Ok(result);
         }
-        */
+
+
     }
 }
