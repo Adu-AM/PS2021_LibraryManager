@@ -10,6 +10,9 @@ using System.Threading.Tasks;
 
 namespace LibraryManager.Api.Controllers
 {
+    /// <summary>
+    /// 
+    /// </summary>
     [Route("api/[controller]")]
     [ApiController]
     public class BookController : ControllerBase
